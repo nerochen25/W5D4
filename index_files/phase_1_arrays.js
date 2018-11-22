@@ -40,16 +40,17 @@ Array.prototype.transpose = function () {
   return result;
 };
 
-
-
-
-
-
-
-
-
-
-
+//myEach function
+// iterate through elements in arr
+/* 
+so for each element in the arr
+callback to run some function on each element
+*/
+Array.prototype.myEach = function (callback) {
+  for (var i = 0; i < this.length; i++) {
+    callback(this[i]);
+  }
+};
 
 
 
